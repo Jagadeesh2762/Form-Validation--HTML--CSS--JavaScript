@@ -1,0 +1,75 @@
+h3{
+    color:black;
+    text-align: center;
+    font-size:x-large;
+    text-decoration-line: underline;
+}
+body{
+    background: linear-gradient(to bottom, rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);
+    font-family: sans-serif;
+    background-attachment:fixed;
+}
+#add{
+    color:black;
+}
+.form{
+   width: 35%;
+   background-color:burlywood;
+   margin: 100px auto 0 auto;
+   padding: 50px;
+   border-radius: 5px;
+}
+.input{
+    display: flex;
+    flex-direction:column ;
+    padding-bottom: 20px ;
+}
+.input span{
+    color: red;
+}
+#error6{
+    color:black;
+    font-weight: bold;
+}
+.input input{
+    padding:10px 0px 13px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.input label{
+    font-weight: bold;
+    color:black;
+}
+#button{
+    padding: 8px 10px 8px 10px ;
+    margin:auto;
+    font-weight: bold;
+    color: aliceblue;
+    background-color:darkblue;
+}
+
+.chkbox input{
+    height:20px;
+    width:20px;
+    cursor: pointer;
+    
+}
+.chkbox label{
+    padding-left: 10px;
+}
+.radio input{
+    cursor: pointer;
+    height:20px;
+    width:20px;
+}
+.radio label{
+    padding-left: 10px;
+}
+#deptbox{
+    margin-top: 20px;
+    height: 40px;
+    width: 70%;
+    font-size: medium;
+
+}

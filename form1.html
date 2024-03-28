@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+	<script src="script.js" ></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="form">
+			<form action="contact.html" onsubmit="return valid()" autocomplete="off" method="post">
+				<h3>Registration Form</h3>
+				<div class="input">
+					<label for="firstname">First Name</label>
+					<input type="text" placeholder="Firstname" id="firstname">
+					<span id="error1"></span>
+				</div>
+				<div class="input">
+					<label for="lastname">Last Name</label>
+					<input type="text" placeholder="Lasttname" id="lastname">
+					<span id="error2"></span>
+				</div>
+				<div class="input">
+					<label for="pass">Password</label>
+					<input type="password" placeholder="Password" id="password">
+					<span id="error3"></span>
+				</div>
+				<div class="input">
+					<label for="cpass">Confirm Password</label>
+					<input type="password" placeholder="Confirm Password" id="cpass">
+					<span id="error4"></span>
+				</div>
+				<div class="input">
+					<label for="mail">E-Mail</label>
+					<input type="text" placeholder="E-mail" id="mail">
+					<span id="error5"></span>
+				</div>
+				<div class="input">
+					<label for="add">Address</label>
+					<textarea rows="4" placeholder="Address" onkeyup="max120()" id="address"></textarea>
+					<span id="add"><span id="error6">120</span> words left</span>
+				</div>
+				<div class="input">
+					<label for="ph">Phone Number</label>
+					<input type="text" placeholder="Phone number" id="ph">
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="ph">Skills</label>
+					<div class="chkbox">
+						<input type="checkbox" id="chk" onclick="chk()">
+						<label >Java</label>
+					</div>
+					<div class="chkbox">
+						<input type="checkbox" id="chk" onclick="chk()">
+						<label >WD</label>
+					</div>
+					<div class="chkbox">
+						<input type="checkbox" id="chk" onclick="chk()">
+						<label >Python</label>
+					</div>
+					<div class="chkbox">
+						<input type="checkbox" id="chk" onclick="chk()">
+						<label >Dot Net</label>
+					</div>
+					<div class="chkbox">
+						<input type="checkbox" id="chk" onclick="chk()">
+						<label >Angular</label>
+					</div>
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="gen">Gender</label>
+					<div class="radio">
+						<input type="radio"  id="gender" name="genGroup">
+						<label>Male</label>
+					</div>
+					<div class="radio">
+						<input type="radio"  id="gender" name="genGroup">
+						<label for="">Female</label>
+					</div>
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="dept">Department</label>
+					<select id="deptbox">
+						<option>--Select any one--</option>
+						<option>Maths</option>
+						<option>Physics</option>
+						<option>Computer Science</option>
+						<option>Commerce</option>
+					</select>
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="pin">Pincode</label>
+					<input type="text" class="pincode">
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="dob">Date of Birth</label>
+					<input type="date" class="dob">
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="aadhar">Aadhar Card Number</label>
+					<input type="text" class="aadhar">
+					<span id="error7"></span>
+				</div>
+				<div class="input">
+					<label for="pan">Pan card Number</label>
+					<input type="text" class="pan">
+					<span id="error7"></span>
+				</div>
+
+				<input id="button" type="submit" value="Submit">
+
+			</form>
+
+		</div>
+
+	</div>
+</body>
+</html>
